@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue | Luxury Fashion</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <header id="site-header"></header>
+  <main>
+    <section class="hero" aria-label="Hero with video background">
+      <video autoplay muted loop playsinline poster="assets/placeholder.svg">
+        <source src="assets/Fashion_Brand_Video_Generation_Request.mp4" type="video/mp4">
+      </video>
+      <div class="hero-brand">
+        <span class="eyebrow">Velvet Vogue</span>
+      </div>
+    </section>
+
+    <section class="container hero-follow">
+      <h1>New Season Arrivals</h1>
+      <p class="muted">Discover sculpted silhouettes, tailored layers, and gold-accented details crafted for modern luxury.</p>
+      <a class="btn" href="products.html">Shop Now</a>
+    </section>
+
+    <section class="container">
+      <div class="section-header">
+        <h2>Shop by Category</h2>
+        <p class="muted">Curated edits for every occasion.</p>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="products.html?category=Casual">
+          <div class="category-media" style="background-image:url('assets/Casual Ware.jpg');" aria-hidden="true"></div>
+          <div class="category-copy">
+            <h3>Casualwear</h3>
+            <p>Relaxed silhouettes in soft-touch fabrics.</p>
+            <span class="btn btn-outline">Explore</span>
+          </div>
+        </a>
+        <a class="category-card" href="products.html?category=Formal">
+          <div class="category-media" style="background-image:url('assets/Formal Ware.jpg');" aria-hidden="true"></div>
+          <div class="category-copy">
+            <h3>Formalwear</h3>
+            <p>Tailored pieces for elevated evenings.</p>
+            <span class="btn btn-outline">Explore</span>
+          </div>
+        </a>
+        <a class="category-card" href="products.html?category=Accessories">
+          <div class="category-media" style="background-image:url('assets/Acecesories.jpg');" aria-hidden="true"></div>
+          <div class="category-copy">
+            <h3>Accessories</h3>
+            <p>Gold-finished details that complete the look.</p>
+            <span class="btn btn-outline">Explore</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-header">
+        <h2>New Arrivals</h2>
+        <p class="muted">Fresh layers and bold textures.</p>
+      </div>
+      <div class="product-grid" id="new-arrivals"></div>
+    </section>
+
+    <section class="container" id="why-section">
+      <div class="section-header">
+        <h2>Why Velvet Vogue</h2>
+        <p class="muted">Luxury with purpose.</p>
+      </div>
+      <div class="value-grid">
+        <div class="value-card">
+          <h4>Premium Quality</h4>
+          <p class="muted">Hand-selected textiles, precise tailoring, and meticulous finishing.</p>
+        </div>
+        <div class="value-card">
+          <h4>Fast Delivery</h4>
+          <p class="muted">Express delivery options with live tracking updates.</p>
+        </div>
+        <div class="value-card">
+          <h4>Easy Returns</h4>
+          <p class="muted">Seamless, no-hassle returns within 30 days.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="newsletter">
+        <div>
+          <span class="eyebrow">Stay Updated</span>
+          <h3 style="margin:8px 0;">Join the Velvet List</h3>
+          <p class="muted">First access to drops, styling edits, and private previews.</p>
+        </div>
+        <form id="home-newsletter">
+          <label for="home-email">Email</label>
+          <input id="home-email" type="email" name="email" required placeholder="you@example.com">
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('home-newsletter')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Subscribed (simulation)');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

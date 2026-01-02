@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue | About Us</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="about">
+  <header id="site-header"></header>
+  <main>
+    <section class="hero hero-compact" aria-label="About Velvet Vogue">
+      <video autoplay muted loop playsinline poster="assets/placeholder.svg">
+        <source src="assets/Fashion_Brand_Video_Generation_Request.mp4" type="video/mp4">
+      </video>
+      <div class="hero-brand">
+        <span class="eyebrow">Velvet Vogue</span>
+      </div>
+    </section>
+
+    <section class="container hero-follow" style="padding-bottom:40px;">
+      <h1>Crafted for Modern Luxury</h1>
+      <p class="muted">We design sculpted silhouettes, precision tailoring, and gold-accented details for confident, modern wardrobes.</p>
+    </section>
+
+    <section class="container">
+      <div class="section-header">
+        <h2>Our Story</h2>
+        <p class="muted">From atelier roots to global wardrobes.</p>
+      </div>
+      <div class="value-grid">
+        <div class="value-card">
+          <h4>Origins</h4>
+          <p class="muted">Born in a small atelier, Velvet Vogue blends couture craftsmanship with contemporary silhouettes.</p>
+        </div>
+        <div class="value-card">
+          <h4>Materials</h4>
+          <p class="muted">We source premium wools, silk blends, and hardware with meticulous finishing for lasting wear.</p>
+        </div>
+        <div class="value-card">
+          <h4>Philosophy</h4>
+          <p class="muted">Minimalist, intentional design with luxurious texture, engineered for everyday confidence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="about-trigger">
+      <div class="section-header">
+        <h2>What We Stand For</h2>
+        <p class="muted">Four pillars that guide every collection.</p>
+      </div>
+      <div class="value-grid">
+        <div class="value-card">
+          <h4>Tailoring</h4>
+          <p class="muted">Architectural fits, clean seams, and calibrated drape for flawless lines.</p>
+        </div>
+        <div class="value-card">
+          <h4>Versatility</h4>
+          <p class="muted">Pieces that move from boardroom to evening with subtle styling shifts.</p>
+        </div>
+        <div class="value-card">
+          <h4>Responsibility</h4>
+          <p class="muted">Small-batch production, durable textiles, and timeless design to reduce waste.</p>
+        </div>
+        <div class="value-card">
+          <h4>Experience</h4>
+          <p class="muted">Fast delivery, thoughtful packaging, and concierge support at every touchpoint.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-header">
+        <h2>Craft & People</h2>
+        <p class="muted">Celebrating the artisans behind every stitch.</p>
+      </div>
+      <div class="info-grid">
+        <div class="card">
+          <h4>Pattern Makers</h4>
+          <p class="muted">Our pattern team perfects balance, proportion, and ease so garments feel sculpted yet comfortable.</p>
+        </div>
+        <div class="card">
+          <h4>Finishers</h4>
+          <p class="muted">Hand-finishing on linings, buttons, and edge painting delivers the Velvet Vogue signature.</p>
+        </div>
+        <div class="card">
+          <h4>Support Team</h4>
+          <p class="muted">Dedicated stylists provide sizing advice, look-building, and aftercare tips.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container newsletter">
+      <div>
+        <span class="eyebrow">Stay Updated</span>
+        <h3 style="margin:8px 0;">Join the Velvet List</h3>
+        <p class="muted">First access to drops, styling edits, and private previews.</p>
+      </div>
+      <form id="about-newsletter">
+        <label for="about-email">Email</label>
+        <input id="about-email" type="email" name="email" required placeholder="you@example.com">
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('about-newsletter')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Subscribed (simulation)');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

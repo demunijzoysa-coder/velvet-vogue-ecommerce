@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f0f0f"/>
+      <stop offset="100%" stop-color="#1f1f1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g2)"/>
+  <rect x="420" y="60" width="280" height="360" rx="80" ry="80" fill="#d4af37" fill-opacity="0.2"/>
+  <rect x="120" y="260" width="260" height="220" rx="60" ry="60" fill="#d4af37" fill-opacity="0.1"/>
+  <text x="60" y="110" fill="#ffffff" font-family="Poppins, Arial" font-size="34" font-weight="600">Formalwear</text>
+  <text x="60" y="160" fill="#bdbdbd" font-family="Poppins, Arial" font-size="18">Tailored layers for elevated evenings</text>
+</svg>

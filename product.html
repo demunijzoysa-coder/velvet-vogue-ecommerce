@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue | Product</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="product">
+  <header id="site-header"></header>
+  <section class="hero hero-compact" aria-label="Product spotlight video">
+    <video autoplay muted loop playsinline poster="assets/placeholder.svg">
+      <source src="assets/Hailuo_Video_Generate a luxury fashion bran_462791122254061575.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content container">
+      <span class="eyebrow">Velvet Vogue</span>
+      <h1>Product Spotlight</h1>
+      <p>Watch the collection film, then dive into sizes, colors, and details below.</p>
+      <a class="btn" href="products.html">Back to Products</a>
+    </div>
+  </section>
+  <main class="container">
+    <div class="breadcrumb">Home / Product</div>
+    <section id="product-detail" class="product-detail" aria-live="polite"></section>
+
+    <section>
+      <div class="section-header">
+        <h2>Related Products</h2>
+        <p class="muted">Pieces you might also love.</p>
+      </div>
+      <div id="related-products" class="product-grid"></div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue | Account</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="account">
+  <header id="site-header"></header>
+  <main class="container" id="account">
+    <div class="section-header">
+      <h2>My Account</h2>
+      <p class="muted">Manage your profile and orders.</p>
+    </div>
+    <div class="orders-grid">
+      <div class="card" id="profile-panel"></div>
+      <div class="card">
+        <h4>My Orders</h4>
+        <table class="orders-table">
+          <thead>
+            <tr><th>Order</th><th>Date</th><th>Status</th><th>Total</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>#VV1024</td><td>12 Oct 2024</td><td><span class="badge">Shipped</span></td><td>$420.00</td></tr>
+            <tr><td>#VV0990</td><td>28 Sep 2024</td><td><span class="badge">Processing</span></td><td>$185.00</td></tr>
+            <tr><td>#VV0955</td><td>15 Sep 2024</td><td><span class="badge">Delivered</span></td><td>$299.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

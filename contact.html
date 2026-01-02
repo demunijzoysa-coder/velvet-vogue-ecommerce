@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue | Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+  <main class="container">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p class="muted">Questions, styling advice, or order support.</p>
+    </div>
+    <div class="info-grid">
+      <div class="card">
+        <h4>Get in touch</h4>
+        <form id="contact-form">
+          <div class="two-col form-row">
+            <div>
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" required>
+            </div>
+            <div>
+              <label for="contact-email">Email</label>
+              <input id="contact-email" type="email" name="email" required>
+            </div>
+          </div>
+          <div>
+            <label for="contact-subject">Subject</label>
+            <input id="contact-subject" name="subject" required>
+          </div>
+          <div>
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" required rows="4"></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="card">
+        <h4>Contact Details</h4>
+        <p>Email: <a href="mailto:hello@velvetvogue.com">hello@velvetvogue.com</a></p>
+        <p>Phone: <a href="tel:+00000000000">+00 000 000 0000</a></p>
+        <p>Address: 88 Velvet Lane, London</p>
+        <div class="map-placeholder">Map placeholder</div>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

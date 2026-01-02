@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue | Products</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="products">
+  <header id="site-header"></header>
+  <section class="hero hero-compact hero-products" aria-label="Products showcase video">
+    <video autoplay muted loop playsinline poster="assets/placeholder.svg">
+      <source src="assets/Hailuo_Video_Generate a luxury fashion bran_462791122254061575.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content container">
+      <span class="eyebrow">Velvet Vogue</span>
+      <p class="muted" style="max-width:600px;">Stream the collection film, then browse the full catalog below.</p>
+      <a class="btn" href="#product-listing">Browse Now</a>
+    </div>
+  </section>
+  <main class="container">
+    <div class="breadcrumb">Home / Products</div>
+    <div class="section-header">
+      <h2>All Products</h2>
+      <p class="muted" id="product-count">Showing 0 products</p>
+    </div>
+
+    <div class="products-toolbar">
+      <div class="filter-toggle">
+        <strong>Filter</strong>
+        <button class="btn btn-outline" id="drawer-toggle" aria-expanded="false">Toggle Filters</button>
+      </div>
+      <div>
+        <label for="sort">Sort</label>
+        <select id="sort">
+          <option value="newest">Newest</option>
+          <option value="price-low">Price Low - High</option>
+          <option value="price-high">Price High - Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="products-layout" id="product-listing">
+      <aside class="filter-panel" id="filter-drawer">
+        <div class="filter-group">
+          <h4>Category</h4>
+          <select id="category-filter">
+            <option>All</option>
+            <option>Casual</option>
+            <option>Formal</option>
+            <option>Accessories</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <h4>Sizes</h4>
+          <div class="filter-option"><input type="checkbox" id="size-xs" name="size-filter" value="XS"><label for="size-xs">XS</label></div>
+          <div class="filter-option"><input type="checkbox" id="size-s" name="size-filter" value="S"><label for="size-s">S</label></div>
+          <div class="filter-option"><input type="checkbox" id="size-m" name="size-filter" value="M"><label for="size-m">M</label></div>
+          <div class="filter-option"><input type="checkbox" id="size-l" name="size-filter" value="L"><label for="size-l">L</label></div>
+          <div class="filter-option"><input type="checkbox" id="size-xl" name="size-filter" value="XL"><label for="size-xl">XL</label></div>
+          <div class="filter-option"><input type="checkbox" id="size-xxl" name="size-filter" value="XXL"><label for="size-xxl">XXL</label></div>
+        </div>
+        <div class="filter-group">
+          <h4>Price (max)</h4>
+          <input type="range" id="price-range" min="0" max="10000" value="10000" step="100">
+          <div class="muted">Up to <span id="price-value">LKR 10,000.00</span></div>
+        </div>
+      </aside>
+
+      <section id="products-grid" class="product-grid" aria-live="polite"></section>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

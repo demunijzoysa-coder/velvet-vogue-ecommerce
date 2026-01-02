@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue | Cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="cart">
+  <header id="site-header"></header>
+  <main class="container">
+    <div class="section-header">
+      <h2>Your Cart</h2>
+      <p class="muted">Review items and proceed to checkout.</p>
+    </div>
+    <div class="cart-grid">
+      <div id="cart-items"></div>
+      <div class="order-summary" id="cart-summary"></div>
+    </div>
+
+    <section>
+      <div class="section-header">
+        <h3>Checkout Simulation</h3>
+        <p class="muted">Enter your details to place a simulated order.</p>
+      </div>
+      <form id="checkout-form" class="card gold-outline">
+        <div class="two-col form-row">
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <textarea id="address" name="address" required rows="3"></textarea>
+        </div>
+        <button class="btn" type="submit">Place Order (Simulated)</button>
+      </form>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue | Admin</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="admin">
+  <header id="site-header"></header>
+  <main class="container">
+    <div class="section-header">
+      <h2>Admin Dashboard</h2>
+      <p class="muted">Manage catalog and orders (simulation).</p>
+    </div>
+    <div class="admin-layout">
+      <aside class="admin-sidebar">
+        <a class="sidebar-link" href="#">Dashboard</a>
+        <a class="sidebar-link" href="#products">Products</a>
+        <a class="sidebar-link" href="#orders">Orders</a>
+        <a class="sidebar-link" href="#users">Users</a>
+        <button class="btn btn-outline" id="admin-logout">Logout</button>
+      </aside>
+      <section class="card" id="products">
+        <div class="products-toolbar">
+          <div>
+            <label for="admin-search">Search</label>
+            <input id="admin-search" type="search" placeholder="Search products">
+          </div>
+          <button class="btn" id="add-product-btn">Add New Product</button>
+        </div>
+        <div class="table-wrapper">
+          <table class="table" id="admin-products" aria-live="polite"></table>
+        </div>
+        <div class="muted" style="margin-top:12px;">Pagination UI</div>
+      </section>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+
+  <div class="modal" id="product-modal">
+    <div class="modal-content" id="product-modal-content">
+      <h3>Add Product</h3>
+      <form id="add-product-form">
+        <div class="two-col form-row">
+          <div>
+            <label for="prod-name">Name</label>
+            <input id="prod-name" name="name" required>
+          </div>
+          <div>
+            <label for="prod-category">Category</label>
+            <select id="prod-category" name="category">
+              <option>Casual</option>
+              <option>Formal</option>
+              <option>Accessories</option>
+            </select>
+          </div>
+        </div>
+        <div class="two-col form-row">
+          <div>
+            <label for="prod-price">Price</label>
+            <input id="prod-price" name="price" type="number" min="0" step="1" required>
+          </div>
+          <div>
+            <label for="prod-image">Image URL</label>
+            <input id="prod-image" name="image" placeholder="assets/placeholder.svg">
+          </div>
+        </div>
+        <div class="two-col form-row">
+          <div>
+            <label for="prod-sizes">Sizes (comma separated)</label>
+            <input id="prod-sizes" name="sizes" placeholder="S, M, L" required>
+          </div>
+          <div>
+            <label for="prod-colors">Colors (comma separated hex)</label>
+            <input id="prod-colors" name="colors" placeholder="#000000, #d4af37" required>
+          </div>
+        </div>
+        <div>
+          <label for="prod-tags">Tags (comma separated)</label>
+          <input id="prod-tags" name="tags" placeholder="new, limited">
+        </div>
+        <div>
+          <label for="prod-description">Description</label>
+          <textarea id="prod-description" name="description" rows="3" required></textarea>
+        </div>
+        <button class="btn" type="submit">Save Product</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('admin-logout')?.addEventListener('click', () => {
+      localStorage.removeItem('vv_user');
+      window.location.href = 'auth.html';
+    });
+  </script>
+</body>
+</html>
