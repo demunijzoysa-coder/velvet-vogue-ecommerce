@@ -50,7 +50,5 @@ No external frameworks or backend services are used.
 - Search and product listing table
 - LocalStorage-based data persistence
 
----
 
-## Project Structure
 
